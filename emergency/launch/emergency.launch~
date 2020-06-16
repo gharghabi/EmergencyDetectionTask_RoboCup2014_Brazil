@@ -1,0 +1,10 @@
+<launch> 
+   <group ns="emergency_launch">
+     <node pkg="athomerobot" name="communication" type="communication" output="screen"/>	
+     <node pkg="emergency" name="accident_skeleton" type="accident_skeleton" output="screen"/>
+     <node pkg="fetch_and_carry" name="grip_emergency" type="grip_emergency" output="screen"/>
+     <node pkg="fetch_and_carry" name="object_emergency" type="object_emergency" output="screen"/>
+     <node pkg="emergency" name="emergency_logic" type="emergency_logic" output="screen"/>
+
+   </group>
+ </launch>
